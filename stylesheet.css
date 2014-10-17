@@ -1,0 +1,102 @@
+
+#basicMap {
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    padding: 0px;
+    position: absolute;
+}
+
+body {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    font-family: sans-serif;
+
+	color: #eee;
+	font-size: 14px;
+	font-family: 'Futura', sans-serif;
+	font-weight: lighter;
+	background-color:#fff;
+	overflow:hidden;
+}
+
+
+a{
+  text-decoration: none;
+  font-style: italic;
+}
+a:link {
+    color: #FFF;
+}
+a:visited {
+    color: #FFF;
+}
+a:hover {
+    color: #EDE275;
+}
+a:active {
+    color: #FFF;
+}
+#UI{
+}
+
+#position{
+	border:1px solid #666;
+	right:-1px;
+	background-color: rgba(8,8,8,0.7);
+
+	position: absolute;
+	top:100px;
+	width:20%;
+    padding:3px;
+    font-size: 18px;
+}
+#adress{
+background-color: rgba(8,8,8,0.7);
+    padding:3px;
+    border-radius: 2px;
+    border: 1px solid;
+    border-color: #060606;
+    position:fixed;
+    top:100px;
+
+    padding:6px;
+    padding-left: 20px;
+    left:-1px;
+    font-size: 14px;
+}
+
+
+input {
+    background-color: rgba(17,17,17,0.5);
+    color: white;
+    border-width: 1px;
+    border-color: #303030;
+    font-size:18px;
+}
+#logotitle{
+	font-style: italic;
+	position: absolute;
+	margin:0;
+	padding:0;
+	top:5px;
+	font-size: 36px;
+	top:5px;
+	right:5px;
+}
+
+#overlay{
+    height:100%;
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    border-spacing: 0;
+    border-collapse: separate;
+
+
+}
+
+
