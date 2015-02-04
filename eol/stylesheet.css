@@ -1,0 +1,230 @@
+body {
+	color: black;
+	font-size: 14px;
+	font-family: 'Helvetica Neue','Tahoma', sans-serif;
+    font-weight: 300;
+	background-color:#fff;
+	overflow:hidden;
+    height:100%;
+    width:100%;
+    padding:0px;
+    margin:0px;
+}
+
+#terms{
+    color: black;
+    font-size: 16px;
+    font-family: 'Helvetica Neue', sans-serif;
+    height:25px;
+    width: 100%;
+    background-color:#fff;
+}
+
+
+#map {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+a{
+  text-decoration: none;
+  color:black;
+}
+
+a:hover {
+    color: #EDE275;
+}
+
+#UI{
+}
+
+#rose,#weibull,#recherche,#coord,#intro,#couches,#pointer,#alert{
+    padding: 6px;
+    position: fixed;
+    z-index: 2;
+    background-color: rgba(248,248,255,0.9);
+    border: 3px solid #CCC ;
+    border-radius: 6px;
+}
+#pointer{
+    pointer-events:none;
+    top:-30px;
+    padding:2px;
+    font-size:12px;
+    position: absolute;
+}
+#intro{
+    z-index: 3;
+    text-align: center;
+    margin:auto;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    height:340px;
+    width:400px;
+}
+#logo{
+position:absolute;
+bottom:25px;
+left:5px;
+opacity:0.8;
+z-index: 999;
+}
+.close{
+    position:absolute;
+    top:3px;
+    right:3px;
+    padding-right: 3px;
+    font-size: 18px;
+}
+.leaflet-control-container{
+    position: fixed;
+    top:90%;
+    color: black;
+    right:40px;
+    display: block;
+    max-height: 50px;
+}
+.leaflet-top{
+    padding-bottom: 100px;
+}
+.leaflet-bottom,.leaflet-right{
+    bottom:0;
+    position: fixed;
+}
+#couches{
+    height:35%;
+    width:200px;
+    bottom:120px;
+    left:-2px;
+}
+.title{
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+}
+#rose{
+    height:340px;
+    top:300px;
+    width:340px;
+    right:-2px;
+    opacity:0.9;
+}
+#weibull{
+    height:220px;
+    width:340px;
+    top:62px;
+    right:-2px;
+    opacity:0.9;
+}
+#recherche{
+    width:200px;
+    top:20px;
+    left:-2px;
+    max-width: 220px;
+}
+.separator{
+    height:2px;
+    background-color: #CCC;
+}
+.destination{
+    border-bottom: 1px solid #CCC;
+}
+#resultat{
+    overflow-y:auto;
+
+    max-height: 180px;
+}
+#coord{
+    height:5%;
+    width:160px;
+    top:38%;
+    left:-2px;
+}
+
+
+#position{
+	border:1px solid #666;
+	right:-2px;
+	background-color: rgba(8,8,8,0.7);
+
+	position: absolute;
+	top:100px;
+	width:20%;
+    padding:3px;
+    font-size: 18px;
+}
+#adress{
+background-color: rgba(8,8,8,0.7);
+    padding:3px;
+    border-radius: 2px;
+    border: 1px solid;
+    border-color: #060606;
+    position:fixed;
+    top:100px;
+
+    padding:6px;
+    padding-left: 20px;
+    left:-2px;
+    font-size: 14px;
+}
+g{
+    pointer-events:auto;
+}
+
+
+input {
+    background-color: rgba(17,17,17,0.5);
+    color: white;
+    border-width: 1px;
+    border-color: #303030;
+    font-size:18px;
+}
+
+#logotitle{
+	font-style: italic;
+	position: absolute;
+	margin:0;
+	padding:0;
+	top:5px;
+	font-size: 36px;
+	top:5px;
+	right:5px;
+}
+
+#layers{
+    width: 100%;
+    height:100%;
+    position: fixed;
+    top:0;
+    left:0;
+}
+#relief,#radar,#postes{
+    width:100%;
+    height:100%;
+}
+
+#alert{
+	top: -30px;
+    position: fixed;
+    pointer-events:none;
+}
+/*
+#overlay{
+    fill:none;
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    pointer-events:none;
+}
+*/
+
+
+
+

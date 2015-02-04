@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EolAtlas</title>
+    <meta charset="utf-8" />
+    <link 
+        rel="stylesheet" 
+        href="leaflet.css"
+    />
+    <link 
+        rel="stylesheet" 
+        href="stylesheet.css"
+    />
+    <link rel="icon" type="image/png" href="images/logosmall.png" />
+    <link href='http://fonts.googleapis.com/css?family=Dancing+Script:700' rel='stylesheet' type='text/css'>
+    <script src="scripts/jQuery.js"></script>
+ 
+</head>
+<body> 
+ 
+    <div id="map"></div>
+    <!--<div id="overlay" style="width: 1280px; height: 800px"></div>-->
+    <div id="pointer"></div>
+    <div id="UI">
+    <div id="alert">test</div>
+      <div id="weibull" style="margin: 0 auto">Courbe Weibull</div>
+      <div id="rose" style="margin: 0 auto"></div>
+      <div id="recherche">
+        <form id="search">
+          <input type="text" id="terms" placeholder="Rechercher"/>
+        </form>
+        <div id="resultat"></div>
+      </div>
+      <div id="coord"></div>
+      <div id="couches">
+        Sélectionnez les couches à activer ou désactiver:
+        <form name="myform">
+          <input type="checkbox" id="validcheck" unchecked> Zones valides<br>
+          <input type="checkbox" id="postescheck"  unchecked> Hors poste source<br>
+          <input type="checkbox" id="habcheck" unchecked> Habitations<br>
+          <input type="checkbox" id="tricheck" unchecked> Stations radioélectriques<br>
+          <input type="checkbox" id="radarcheck" unchecked> Aviation (radars, aérodromes, balises)<br>
+          <input type="checkbox" id="dangercheck" unchecked> Avifaune<br>
+          <input type="checkbox" id="sourischeck" unchecked> Chiroptères<br>
+          <input type="checkbox" id="parccheck" unchecked> Parc naturel du Morvan<br>
+          <input type="checkbox" id="zeecheck" unchecked> ZNIEFF (Zone Naturelle d'Intérêt Ecologique Faunistique et Floristique)<br>
+        </form>
+      </div>
+      <div id="logo">
+      	<a href="http://calsimeol.fr">
+      		<img  src="images/logo_calsimeol.png"/>
+      	</a>
+      </div>
+      <div id="copyright" style="display:none">
+        <p>Nominatim Search Courtesy of <a href="http://www.mapquest.com/" target="_blank">MapQuest</a> <img src="http://developer.mapquest.com/content/osm/mq_logo.png"></p>
+      </div>
+      <div id="intro">
+      <img src="images/logo.png"><br/>
+      	Cet atlas éolien, disponible en Open Source vise à favoriser le développement des énergies renouvelables sur le territoire de France métropolitaine. Cliquez sur n'importe quel point de la carte afin d'afficher le potentiel éolien disponible pour la station météorologique la plus proche de la zone sélectionnée.
+            <div class="close"><a href="#">X</a></div>
+      </div>
+    </div>
+ 
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="http://cdn.leafletjs.com/leaflet-0.7/leaflet.js"></script>
+  <!--<script src="scripts/wind.js"></script>-->
+  <script src="scripts/EolEngine.js"></script>
+
+  <!-- Scripts nécessaires aux graphiques HighChart/Highslide -->
+  <script src="scripts/jquery-1.7.2.js" type="text/javascript"></script>
+  <script src="scripts/highcharts.js"></script>
+  <script src="scripts/highcharts-more.js"></script>
+  <script src="scripts/exporting.js"></script>
+  <script type='text/javascript' src="scripts/highslide-full.min.js"></script>
+  <script type='text/javascript' src="scripts/highslide.config.js"></script>
+  <link rel="stylesheet" type="text/css" href="scripts/highslide.css"/>
+  <!-- Scripts pour les graphs -->
+  <script src="scripts/weibullGraph.js"></script>
+  <script src="scripts/rdvGraph.js"></script>
+</body>
+</html>

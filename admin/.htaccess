@@ -1,0 +1,11 @@
+Order Allow,Deny
+Allow From All
+
+<IfModule mod_php5.c>
+
+        php_value max_execution_time 0
+        php_value max_input_time 0
+        php_value upload_max_filesize 100M
+        php_value post_max_size 100M
+        php_value memory_limit 100M
+</IfModule>

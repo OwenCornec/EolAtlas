@@ -1,0 +1,6 @@
+var resolution=1000;
+
+var html="";
+for(var i=0;i<=resolution;i++){
+	
+}
